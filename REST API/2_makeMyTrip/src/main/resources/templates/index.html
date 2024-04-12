@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div align="center">
+    <h1>Passenger Registration</h1>
+    <p th:text="${msg}"/>
+    <form action="#" th:action="@{/book-Ticket}" method="post" th:object="${passenger}">
+        <label>Full name:</label>
+        <input type="text" th:field="*{name}" /><br/>
+
+        <label>From:</label>
+        <input type="text" th:field="*{from}" /><br/>
+
+        <label>To:</label>
+        <input type="text" th:field="*{to}" /><br/>
+
+        <label>DATE OF JOINING (yyyy-mm-dd):</label>
+        <input type="text" th:field="*{doj}" /><br/>
+
+
+
+        <label>Train Number ?</label>
+        <input type="text" th:field="*{trainNumber}" /><br/>
+
+
+        <br/>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <a href="view-Ticket">VIEW TICKET</a>
+</div>
+
+</body>
+</html>

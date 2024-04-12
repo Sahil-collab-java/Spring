@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Welcome-Api
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+server:
+  port: 9091
+
+
+

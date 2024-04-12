@@ -1,0 +1,14 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: 'beans'
+
+  endpoint:
+    shutdown:
+      enabled: true
+
+
+

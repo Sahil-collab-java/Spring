@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>VIEW TICKET</h1>
+<form th:action="@{/get-Ticket}" method="get">
+    ENTER TICKET NUM : <input type="text" name="ticketNum" placeholder="ENTER THE TICKET NUM" />
+    <button type="submit">Submit</button>
+</form>
+<br>
+
+<hr>
+
+<div>
+    <label>NAME :</label>
+    <span th:text="${getTicket.name}"></span>
+</div>
+<div>
+    <label>Ticket NUM :</label>
+    <span th:text="${getTicket.ticketNum}"></span>
+</div>
+<div>
+    <label>STATUS :</label>
+    <span th:text="${getTicket.status}"></span>
+</div>
+<div>
+    <label>Ticket COST :</label>
+    <span th:text="${getTicket.ticketCost}"></span>
+</div>
+<div>
+    <label>FROM :</label>
+    <span th:text="${getTicket.from}"></span>
+</div>
+<div>
+    <label>TO :</label>
+    <span th:text="${getTicket.to}"></span>
+</div>
+<div>
+    <label>DOJ :</label>
+    <span th:text="${getTicket.doj}"></span>
+</div>
+<div>
+    <label>Train Number :</label>
+    <span th:text="${getTicket.trainNumber}"></span>
+</div>
+
+
+
+
+
+</body>
+</html>
